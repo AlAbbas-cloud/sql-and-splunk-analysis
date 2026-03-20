@@ -37,9 +37,9 @@ Used SQL commands to inspect table health:
 
 ```sql
 CHECK TABLE employee;
-
+```
 If issues were detected, attempted optimization:
-
+```sql
 OPTIMIZE TABLE employee;
 ```
 
