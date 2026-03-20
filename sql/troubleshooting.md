@@ -41,3 +41,21 @@ CHECK TABLE employee;
 If issues were detected, attempted optimization:
 
 OPTIMIZE TABLE employee;
+
+### 4. Restore from Backup (If Needed)
+If corruption persisted:
+
+Created a new database with the same name
+
+Imported the previously exported .sql backup file
+
+This restores the database to a known working state.
+
+### 5. Reinstall XAMPP (Last Resort)
+If the corruption was caused by the local environment rather than the database:
+
+Uninstalled and reinstalled XAMPP
+
+Re-imported the database backup
+
+This resolves deeper MySQL engine issues.
