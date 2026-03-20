@@ -41,8 +41,8 @@ CHECK TABLE employee;
 If issues were detected, attempted optimization:
 
 OPTIMIZE TABLE employee;
-
-### 4. Restore from Backup (If Needed)
+```
+#### 4. Restore from Backup (If Needed)
 If corruption persisted:
 
 Created a new database with the same name
