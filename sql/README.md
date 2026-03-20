@@ -12,7 +12,7 @@ This folder contains all SQL-related work for the MidTown IT cybersecurity proje
 CREATE DATABASE AliAbbas_employees_db;
 ```
 
-### Create Database Screenshot
+### Screenshot
 ![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Create%20Database.png)
 
 ## 2. Create Table
@@ -30,7 +30,7 @@ CREATE TABLE employee (
 );
 ```
 
-### Create Table Screenshot
+### Screenshot
 ![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Database%20Created.png)
 
 ## 3. Table Created & Populated
@@ -52,10 +52,12 @@ INSERT INTO employee (employee_no, name, date_of_birth, position, email, phone_n
 (9014, 'Karen', '1984-03-03', 'Data analyst', 'Karen.1984@certviv.com', '991');
 ```
 
-### Table Created & Populated Screenshot
+### Screenshot
 ![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Table%20created%20and%20populated.png)
 
 ## 4. Select Queries
+
+### a) Select the first five records
 
 ### SQL Command
 ```sql
@@ -63,5 +65,15 @@ INSERT INTO employee (employee_no, name, date_of_birth, position, email, phone_n
 SELECT * FROM employee LIMIT 5;
 ```
 
-### Select Queries Screenshot
+### Screenshot
 ![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20first%20five%20records.png)
+
+### b) Select employees who are managers
+
+### SQL Command
+```sql
+SELECT * FROM employee WHERE position = 'Manager';
+```
+
+### Screenshot
+![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20employees%20who%20are%20managers.png)
