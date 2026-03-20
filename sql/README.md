@@ -54,3 +54,14 @@ INSERT INTO employee (employee_no, name, date_of_birth, position, email, phone_n
 
 ### Table Created & Populated Screenshot
 ![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Table%20created%20and%20populated.png)
+
+## 4. Select Queries
+
+### SQL Command
+```sql
+-- Select the first five records
+SELECT * FROM employee LIMIT 5;
+```
+
+### Select Queries Screenshot
+![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20first%20five%20records.png)
