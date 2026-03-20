@@ -8,7 +8,6 @@ This folder contains all SQL-related work for the MidTown IT cybersecurity proje
 
 ### SQL Command
 ```sql
--- Create employees database
 CREATE DATABASE AliAbbas_employees_db;
 ```
 
@@ -19,7 +18,6 @@ CREATE DATABASE AliAbbas_employees_db;
 
 ### SQL Command
 ```sql
--- Create Employee Table
 CREATE TABLE employee (
     employee_no INT PRIMARY KEY,
     name VARCHAR(50),
@@ -37,7 +35,6 @@ CREATE TABLE employee (
 
 ### SQL Command
 ```sql
--- Insert Employee Records
 INSERT INTO employee (employee_no, name, date_of_birth, position, email, phone_no) VALUES
 (1234, 'Mary', '1991-01-01', 'Engineer', 'Mary.1991@certiv.com', '981'),
 (2345, 'Samuel', '1992-02-02', 'CEO', 'Samuel.1992@certiv.com', '982'),
@@ -61,7 +58,6 @@ INSERT INTO employee (employee_no, name, date_of_birth, position, email, phone_n
 
 ### SQL Command
 ```sql
--- Select the first five records
 SELECT * FROM employee LIMIT 5;
 ```
 
@@ -77,3 +73,41 @@ SELECT * FROM employee WHERE position = 'Manager';
 
 ### Screenshot
 ![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20employees%20who%20are%20managers.png)
+
+## 5. Insert New Employee (Joseph)
+
+### SQL Command
+```sql
+INSERT INTO employee VALUES
+(9023, 'Joseph', '1989-10-11', 'Engineer', 'Joseph.1989@certiv.com', '992');
+```
+
+### Screenshot
+![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Insert%20row%20into%20the%20Employee%20table.png)
+
+## 6. Update Michael’s Information
+
+### SQL Command
+```sql
+UPDATE employee
+SET employee_no = 1111,
+    name = 'Michael',
+    date_of_birth = '2000-01-01',
+    position = 'Salesman',
+    email = 'Michael.2000@certiv.come',
+    phone_no = '999'
+WHERE name = 'Michael';
+```
+
+### Screenshot
+![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Update%20Michael%E2%80%99s%20information.png)
+
+## 7. Delete John’s Record
+
+### SQL Command
+```sql
+DELETE FROM employee WHERE name = 'John';
+```
+
+### Screenshot
+![Delete John’s Record](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Delete%20John%E2%80%99s%20details.png)
