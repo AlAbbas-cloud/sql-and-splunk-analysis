@@ -29,7 +29,7 @@ CREATE TABLE employee (
 ```
 
 ### Screenshot
-![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Database%20Created.png)
+![Create Table](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Database%20Created.png)
 
 ## 3. Table Created & Populated
 
@@ -50,7 +50,7 @@ INSERT INTO employee (employee_no, name, date_of_birth, position, email, phone_n
 ```
 
 ### Screenshot
-![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Table%20created%20and%20populated.png)
+![Table Created & Populated](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Table%20created%20and%20populated.png)
 
 ## 4. Select Queries
 
@@ -62,7 +62,7 @@ SELECT * FROM employee LIMIT 5;
 ```
 
 ### Screenshot
-![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20first%20five%20records.png)
+![first five records](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20first%20five%20records.png)
 
 ### b) Select employees who are managers
 
@@ -72,7 +72,7 @@ SELECT * FROM employee WHERE position = 'Manager';
 ```
 
 ### Screenshot
-![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20employees%20who%20are%20managers.png)
+![employees who are manager](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Select%20the%20employees%20who%20are%20managers.png)
 
 ## 5. Insert New Employee (Joseph)
 
@@ -83,7 +83,7 @@ INSERT INTO employee VALUES
 ```
 
 ### Screenshot
-![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Insert%20row%20into%20the%20Employee%20table.png)
+![Insert New Employee](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Insert%20row%20into%20the%20Employee%20table.png)
 
 ## 6. Update Michael’s Information
 
@@ -100,7 +100,7 @@ WHERE name = 'Michael';
 ```
 
 ### Screenshot
-![Create Database](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Update%20Michael%E2%80%99s%20information.png)
+![Update Michael’s Information](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/sql/screenshots/Update%20Michael%E2%80%99s%20information.png)
 
 ## 7. Delete John’s Record
 
