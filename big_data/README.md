@@ -1,6 +1,6 @@
 # Big Data Concepts & Heavy.AI Demonstration
 
-This section explains the core concepts of Big Data and demonstrates how large datasets can be explored using Heavy.AI (formerly OmniSci).  
+This section explains the core concepts of Big Data and demonstrates how large datasets can be explored using **Heavy.AI** (formerly OmniSci).  
 The goal is to show an understanding of the **Four Vs of Big Data** and how modern tools handle high‑volume, high‑velocity information.
 
 ---
