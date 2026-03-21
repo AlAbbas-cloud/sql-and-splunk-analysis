@@ -31,3 +31,49 @@ To explore Big Data concepts in practice, I used Heavy.AI’s public demo enviro
 ### Search Performed
 I searched for tweets containing the keyword:
 
+
+This returned thousands of results across multiple geographic regions.
+
+---
+
+## 3. Visual Exploration
+
+Heavy.AI automatically plotted the results on an interactive map, allowing visual analysis of:
+
+- Tweet locations  
+- Regional activity levels  
+- Patterns in cybersecurity discussions  
+- High‑density clusters  
+
+### Tweet Map  
+`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
+
+---
+
+## 4. Tweet Results Table
+
+The platform also displayed a sortable table of tweets, showing:
+
+- Tweet text  
+- Usernames  
+- Timestamps  
+- Locations  
+- Engagement metrics  
+
+### Tweet Results  
+`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
+
+---
+
+## 5. Why This Matters
+
+Understanding Big Data is essential for cybersecurity because:
+
+- SIEMs like Splunk process massive log volumes  
+- Threat intelligence feeds are high‑velocity data streams  
+- SOC analysts must filter noise from meaningful signals  
+- Attack patterns often emerge only at scale  
+
+This section demonstrates the ability to work with large datasets and interpret visual analytics tools.
+
+---
