@@ -56,14 +56,22 @@ source="WinEventLog:*" host="Esther2024"
 ## 6. Anomaly Detection
 
 To identify unusual authentication patterns, I ran a time‑based analysis on events containing the keyword **"password"** from the monitored host.  
-This query visualizes how often password‑related events occurred over time, making it easier to spot spikes or irregular activity.
 
 ### Search Query
 ```spl
 source="linux_s_30DAY.log" host="ESTHER2024" password | timechart count by host
 ```
+This query visualizes how often password‑related events occurred over time, making it easier to spot spikes or irregular activity.
+
 ![Anomaly Detection](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/splunk/screenshots/Anomaly%20detection.png)
 
+
+This timechart helps reveal anomalies such as:
+
+- Sudden increases in failed login attempts
+- Irregular authentication patterns
+- Potential brute‑force activity
+- Host‑specific spikes that may indicate targeted attacks
 
 ### Findings
 - Multiple failed SSH login attempts were detected.
