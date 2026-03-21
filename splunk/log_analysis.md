@@ -27,15 +27,43 @@ This section documents the ingestion and analysis of the `linux_s_30Day.log` dat
 ---
 
 ## 3. Data Ingestion
+This step involved uploading the `linux_s_30Day.log` file into Splunk Enterprise for indexing. Once ingested, Splunk automatically parsed timestamps, sources, and event types, making the data searchable and ready for analysis.
+
 ![Data Ingestion](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/splunk/screenshots/Data%20ingestion.png)
 
----
 
 ## 4. Failed Password Search
+
+To identify potential brute-force activity, I searched the ingested logs for failed SSH authentication attempts. This query isolates all events containing the phrase **"Failed password"**, allowing quick detection of repeated login failures.
+
+### Search Query
 ```sql
 index=f1data "Failed password"
 ```
 ![Failed Password](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/splunk/screenshots/Brute-force%20pattern.png)
+
+## 5. Subtasks Search
+
+To demonstrate the use of subtasks, I created two separate searches and executed one of them.  
+The search below filters Windows Event Logs from the monitored host.
+
+### Search Query
+```spl
+source="WinEventLog:*" host="Esther2024"
+```
+![Subtask Search](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/splunk/screenshots/Search%20results.png)
+
+## 6. Anomaly Detection
+
+To identify unusual authentication patterns, I ran a time‑based analysis on events containing the keyword **"password"** from the monitored host.  
+This query visualizes how often password‑related events occurred over time, making it easier to spot spikes or irregular activity.
+
+### Search Query
+```spl
+source="linux_s_30DAY.log" host="ESTHER2024" password | timechart count by host
+```
+![Anomaly Detection](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/splunk/screenshots/Anomaly%20detection.png)
+
 
 ### Findings
 - Multiple failed SSH login attempts were detected.
@@ -44,7 +72,7 @@ index=f1data "Failed password"
 - The log entries show repeated attempts from the same source, suggesting automated activity.
   
 ### Conclusion
-The log data shows clear signs of repeated unauthorized access attempts. 
+The log data shows clear signs of repeated unauthorised access attempts. 
 This demonstrates how Splunk can be used to:
 
 - Detect anomalies
@@ -54,5 +82,4 @@ This demonstrates how Splunk can be used to:
 
 Splunk’s search capabilities make it an essential tool for SOC analysts.
 
-### Screenshots
-Screenshots of the Splunk search results will be added here.
+
