@@ -46,7 +46,7 @@ Heavy.AI automatically plotted the results on an interactive map, allowing visua
 - High‑density clusters  
 
 ### Tweet Map  
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
+![Tweet Map](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/big_data/screenshots/Map%20showing%20the%20locations%20where%20the%20tweets%20were%20posted.png)
 
 ---
 
@@ -61,7 +61,7 @@ The platform also displayed a sortable table of tweets, showing:
 - Engagement metrics  
 
 ### Tweet Results  
-`[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`
+![Tweet Results](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/big_data/screenshots/Tweets%20results%2C%20including%20Retweets%20numbers%20and%20users%20and%20Relevance%20Tweets.png)
 
 ---
 
