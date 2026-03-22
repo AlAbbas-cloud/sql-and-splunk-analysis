@@ -2,6 +2,7 @@
 
 This section outlines the core responsibilities of a Security Operations Centre (SOC) analyst and explains how Splunk supports day‑to‑day monitoring, investigation, and incident response activities.
 
+![Image](https://raw.githubusercontent.com/AlAbbas-cloud/sql-and-splunk-analysis/refs/heads/main/soc/Image/_33d40b16-1c1b-484c-8840-deb221694948.jpg)
 ---
 
 ## 1. Key SOC Responsibilities
