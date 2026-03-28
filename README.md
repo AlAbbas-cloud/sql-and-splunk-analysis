@@ -4,7 +4,7 @@ This project showcases my hands-on work with SQL databases, SQL injection testin
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 - [Project Overview](#project-overview)
 - [Tools & Technologies](#tools--technologies)
 - [Repository Structure](#repository-structure)
